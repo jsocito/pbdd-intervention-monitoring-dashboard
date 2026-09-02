@@ -9,5 +9,5 @@ a working web prototype that brings pbdd's scattered monitoring records into one
 - forms, photos and other supporting documents required per program. Include monitoring checklists
 3. Dashboard (All users)
  - overall workflow tracking per project/region/dept.
-4. Report export
+4. Report export (All users)
  - one stop shop to export standard report templates, forms, process checklists etc.
