@@ -1,3 +1,41 @@
 body {
-  background-color: red !important;
+  background-color: rgb(215, 188, 228) !important;
 }
+  nav ul {
+    display: flex;
+    justify-content: space-around; /* Distributes links evenly across the row */
+    align-items: center;
+    gap: 1rem;
+    list-style: none;
+    list-style-type: none; /* Removes bullet points */
+    margin: 0;
+    padding: 0;
+  }
+  nav a {
+    text-decoration: none;/*remove text underlines */
+    color: #04044e; /*change text color to blue */
+    font-weight: bold; /*make text bold */
+    padding; 10px 15px; /* Makes the clickable area larger */
+    display: inline-block;
+  }
+  nav a:hover {
+    color: #007bff; /* Changes color on hover */
+  }
+  intervention-list {
+    list-style: none; /* Removes bullet points */
+    padding: 0;
+  display: flex;
+  justify-content: space-between; /* Evenly spreads blocks across the row layout */
+  gap: 24px;                      /* Defines explicit, visible space between blocks */
+  width: 100%;                    /* Spans the full width of the parent layout */
+  margin: 20px 0;
+}
+Intervention-list .summary-block {
+  flex: 1;                        /* Forces all 4 blocks to maintain equal width */
+  background-color: #f8f9fa;      /* Light gray background color */
+  border: 1px solid #e9ecef;      /* Subtle border outline */
+  border-radius: 8px;             /* Rounded container corners */
+  padding: 20px;                  /* Inner spacing around block content */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05); /* Slight elevation shadow */
+}
+
