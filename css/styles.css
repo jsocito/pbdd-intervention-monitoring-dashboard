@@ -21,21 +21,81 @@ body {
   nav a:hover {
     color: #007bff; /* Changes color on hover */
   }
-  intervention-list {
-    list-style: none; /* Removes bullet points */
-    padding: 0;
+.summary-container {
   display: flex;
-  justify-content: space-between; /* Evenly spreads blocks across the row layout */
-  gap: 24px;                      /* Defines explicit, visible space between blocks */
-  width: 100%;                    /* Spans the full width of the parent layout */
-  margin: 20px 0;
-}
-Intervention-list .summary-block {
-  flex: 1;                        /* Forces all 4 blocks to maintain equal width */
-  background-color: #f8f9fa;      /* Light gray background color */
-  border: 1px solid #e9ecef;      /* Subtle border outline */
-  border-radius: 8px;             /* Rounded container corners */
-  padding: 20px;                  /* Inner spacing around block content */
-  box-shadow: 0 2px 4px rgba(0,0,0,0.05); /* Slight elevation shadow */
+  justify-content: space-between; /* Stretches metrics edge to edge along wide screens */
+  gap: 16px;                      /* Clean, explicit gutters dividing blocks spacing */
+  width: 100%;
+  margin: 24px 0;
 }
 
+.summary-block {
+  flex: 1;                        /* Guarantees all 4 dashboard boxes retain equal sizing */
+  background-color: #fdf9f9;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 16px;
+  text-align: center;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+.summary-block h3 {
+  margin: 0 0 8px 0;
+  font-size: 0.85rem;
+  color: #718096;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.summary-block .summary-value {
+  margin: 0;
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #0a0a0a;
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 4px 10px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  border-radius: 12px;            /* Standardized visual pill boundary shapes */
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Completed Status - Distinct High Contrast Green Badge */
+.status-completed {
+  background-color: #def7ec;
+  color: #03543f;
+  border: 1px solid #bcf0da;
+}
+
+/* Ongoing Status - Distinct High Contrast Blue/Teal Badge */
+.status-ongoing {
+  background-color: #e1effe;
+  color: #1e429f;
+  border: 1px solid #c3ddfd;
+}
+
+/* Scheduled / Delayed Status - Distinct High Contrast Yellow/Amber Badge */
+.status-scheduled {
+  background-color: #fef08a;
+  color: #713f12;
+  border: 1px solid #fef08a;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+  background: rgb(241, 236, 236);
+}
+th, td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #e2e8f0;
+}
+th {
+  background-color: #f8fafc;
+  color: #475569;
+}
